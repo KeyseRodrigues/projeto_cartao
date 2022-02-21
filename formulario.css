@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+
+.cab-img{
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 95px;
+}
+.cab-menu{
+   display: flex;
+   gap: 40px;
+
+}
+
+.cab-menu-item{
+   font-family:  'Source Sans Pro', sans-serif;
+   color: #FFF2E7;
+   font-weight: 300;
+   font-size: 18px;
+   
+}
+#titulo{
+    font-family: 'Source Sans Pro', sans-serif; 
+    color:rgb(255, 255, 255);
+    margin-left: 7%;
+    font-weight: 400;
+    padding-top: 15px;
+
+}
+
+#subtit{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(236, 229, 229);
+    margin-left: 7%;
+}
+.tit{
+    border-top: 0.4px solid #FFF2E7;
+    align-items: center;
+}
+fieldset{
+    padding: 10px;
+    align-items: center;
+    border:0;
+    margin-left: 45px;
+}
+
+body {
+    
+    background-color: #01c117;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1em;
+    margin: px;
+    align-items: center;
+   
+}
+
+input,select,button{
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: solid 1px #fff5f5 ;
+
+}::placeholder{
+    color:#FFF2E7;
+}
+
+
+.campo{
+    margin-bottom: 1em;
+
+}
+.campo label{
+   margin-bottom: 0.2em;
+   color:rgb(255, 254, 254); 
+   display: block;
+}
+fieldset.grupo.campo{
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"],.campo select{
+    padding:0.2em;
+    display: block;
+    background-color: transparent;
+}
+.campo2{
+    margin-bottom: 1em;
+    color:rgb(255, 253, 253); 
+}
+
+.campo select option{
+    padding-right: 1em;
+
+}
+
+.campo input:focus, .campo select:focus{
+    background-color: #ffc600;
+    border-radius: 10px;
+}
+
+
+.botao{
+    border-radius: 5px;
+    background-color: #ffc600;
+    color: white;
+    width: 80px;
+    font-size:1.2em ;
+    border: 0;
+    margin-top: 15px;
+    margin-left: 70px ;
+    margin-bottom: 10%;
+    padding: 0.2 0.6em;
+    box-shadow: 2px 2px 2px 2px gray; 
+    text-shadow: 1px 1px 1px white;
+    width: 70px;
+    height: 4;
+    align-content: center;
+    
+}
+.botao:hover{
+    background: rgb(95, 197, 95);
+    box-shadow: inset 2px 2px 2px;
+    text-shadow: none;
+}
+
+#check{
+    display: inline-block;
+    
+}
+
+
+
+
+
+
+
+
+

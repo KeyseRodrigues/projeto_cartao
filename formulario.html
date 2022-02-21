@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../landingpage vr/imagens_vr/vr-50.png" type="image/x-icon">
+    <title>Seu VR</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+</head>
+<body>
+   <header class="cabecalho">
+       <img class="cab-img" src="imagens/vr-50.png" alt="">
+       <nav class="cab-menu">
+           <a class="cab-menu-item" href="../landingpage vr/index.html">Sobre a VR</a>
+           <a class="cab-menu-item" href="#">Fale Conosco</a>
+       </nav>
+   </header>
+    <div class="tit">
+        <h1 id="titulo"> Seu time merece VR Benefícios</h1>
+        <p id="subtit"> Preencha seus dados abaixo e um representante VR entrará em contato</p>
+        <br>
+    </div>
+
+    <form> <!--Tag formulario-->
+        <fieldset class="grupo">  <!--Conjunto  de campos-->
+            
+            <div class="campo">
+                <input type="text" nome="nome" placeholder="Digite o nome da empresa" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <input type="text" nome="empresa" placeholder="Digite seu nome " id="empresa" required>
+            </div>
+
+            <div class="campo">
+                <input type="tel" nome="tel" placeholder="Digite o telefone comercial" id="tel" required>
+            </div>
+
+            <div class="campo">
+                <input type="tel" nome="cel" placeholder="Digite o celular" id="cel" required>
+            </div>
+
+            <div class="campo">
+                <!--<label for="email"> <strong>E-mail comercial</strong> </label>--> 
+                <input type="email" nome="email" placeholder="Digite o e-mail " id="email" required>
+            </div> <br>
+
+            <div class="campo">
+                <label> <strong>Quantos funcionarios a empresa possui?</strong></label> <br>
+                <label>
+                    <input type="radio" name="func" value="10-50" > 10-50 funcionários
+                </label> <!--opções de circulos para selecionar apenas um-->
+                <label>
+                    <input type="radio" name="func" value="50-100"> 50-100 funcionários <!--para ter apenas uma seleção os nomes devem ser iguais-->
+                </label>
+                <label>
+                    <input type="radio" name="func" value="100-300"> 100-300 funcionários
+                </label>
+                <label>
+                <input type="radio" name="func" value="300"> 300 ou mais funcionários
+                </label>
+            </div><br>
+
+            <div class="campo">
+                <label> <strong>Qual benefício você quer cotar?</strong> </label>
+                <select id="beneficio"> <!--tag para selecionar uma só-->
+                    <option selected disable value=""> Selecione </option> <!-- opção para manter o campo sem pré-seleção-->
+                    <option >VR Alimentação </option>
+                    <option >VR Refeição </option>
+                    <option> VR Alimentação + VR Refeição </option>
+                </select><br>
+            </div>
+                <div class="campo2">
+                    <label><strong> Selecione os melhores horários para entrarmos em contato: </strong></label><br><br>
+                    <input type="checkbox" name="horario1" id="horario1" value="comercial">
+                    <label for="horario1">Comercial - Seg á Sex (8:00 ás 17:00)</label><br>
+                    <input type="checkbox" name="horario2" id="horario2" value="Fim_semana">
+                    <label for="horario2"> Fim de Semana - Sáb e Domingo (09:00 ás 15:00) </label>
+                </div>  
+            </fieldset>
+
+                <button class="botao" type="submit"> Enviar </button>
+    </form>
+</body>
+</html>
